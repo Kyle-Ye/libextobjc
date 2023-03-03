@@ -15,3 +15,5 @@ CVS
 .DS_Store
 *~.nib
 *.swp
+
+.swiftpm
