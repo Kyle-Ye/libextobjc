@@ -3,12 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "extobjc",
+    name: "libextobjc",
     products: [
-        .library(name: "extobjc", targets: ["extobjc"]),
+        .library(name: "libextobjc", targets: ["libextobjc"]),
     ],
     targets: [
-        .target(name: "extobjc"),
-        .testTarget(name: "extobjcTests", dependencies: ["extobjc"]),
+        .target(name: "libextobjc", cSettings: [.headerSearchPath("include/libextobjc")]),
     ]
 )
